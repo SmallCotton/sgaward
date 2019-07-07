@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="bggrey">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <script src="js/font.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper myawards">
+        <div class="topbar">
+            <a href="javascript:void(0);" class="_back"></a>
+            我的红包
+            <a href="" class="help"></a>
+        </div>
+        <div class="box1">
+            <p class="tit">
+                <span>现金红包</span>
+                <a href="/record.html" class="recode">记录</a>
+            </p>
+            <div class="card">
+                <p class="p1">
+                    <span class="num"><i>￥</i><em id="couponBalance">0.00</em></span>
+                    <a href="/withdrawals.html" class="btn" id="getMoney">去提现</a>
+                </p>
+                <p class="p2">
+                    <span class="fl">累计提现到账<i id="cashedAmount">0.00</i>元</span>
+                    <span class="fr">满<i id="withdrawLimit">0.00</i>元可提现</span>
+                </p>
+            </div>
+        </div>
+        <div class="box2">
+            <p class="tit">签到获得的阅豆</p>
+            <div class="bean-bar">
+                <div class="bean-ico"></div>
+                <div class="txt-box">
+                    <p class="p1">
+                        <span><i id="readnum">0</i>个</span>
+                        <a href="https://yue.sogou.com" class="btn">去使用</a>
+                    </p>
+                    <p class="p2">
+                        <span class="fl">签到累计阅豆</span>
+                        <span class="fr">正版小说免费读</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="accountManage" id="accountManage">提现账户管理</a>
+    </div>
+    <script>
+        window.pageName = 'myawards';
+    </script>
+
+    <script src="js/vconsole.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/myawards.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="">
+        <!-- alertshow -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <!-- <script src="js/mock.js"></script> -->
+
+    <script src="js/font.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper withdrawals">
+        <div class="topbar">
+            <a href="javascript:void(0);" class="_back"></a>
+            提现
+            <a href="" class="help"></a>
+        </div>
+        <div class="box1">
+            <p class="p1">当前余额</p>
+            <p class="p2"><i>￥</i><em id="couponBalance">0</em></p>
+        </div>
+        <div class="hr"></div>
+        <div class="box2">
+            <p class="pt">提现方式</p>
+            <div class="pay-box cl" id="withdrawType">
+                <a href="javascript:void(0);" class="zfb sel" data-type=1 >支付宝</a>
+                <a href="javascript:void(0);" class="wechart" data-type=2 >微信</a>
+            </div>
+            <p class="pt">提现金额</p>
+            <div class="money-box cl" id="amountLimits">
+                 <a href="javascript:void(0);" class="sel">-元</a>
+                 <a href="javascript:void(0);" class="">-元</a>
+                 <a href="javascript:void(0);" class="">-元</a>
+            </div>
+            <p class="tip1">*当天共<i class="totalNum"></i>位名额，剩余提现名额<i class="remainNum"></i></p>
+        </div>
+        <div class="box3">
+            <div class="tip2"><i class="amountLimit">-</i>元提现说明：连续登录<i class="loginDayLimit">-</i>天的用户即可获得一次<i class="amountLimit">-</i>元提现机会，提现后可重新获得提现机会</div>
+            <div class="tip3">注意事项<br> 1.提现申请将在3-7工作日内审核到账，请耐心等待;<br> 2.提现金额将在提现审核通过后，汇入您的支付宝或者微信钱包中，您可以在支付宝账单或者微信钱包明细中查询;<br> 3.若您存在违规行为，提现申请将可能被驳回。</div>
+        </div>
+        <div class="btm-box">
+            <a href="javascript:void(0);" class="get-btn" id="submit">立即提现</a>
+        </div>
+   
+        <div class="alert-box" id="alertBox">
+            <div class="err-box wzfb">
+                <i></i>
+                <p class="p1">支付宝未绑定</p>
+                <a href="javascript:void(0);" class="btn" id="zfbbd">立即绑定</a>
+            </div>
+            <div class="err-box wsjh">
+                <i></i>
+                <p class="p1">提现需要绑定手机号</p>
+                <a href="javascript:void(0);" class="btn" id="sjhbd">立即绑定</a>
+            </div>
+            <div class="err-box wwx">
+                <i></i>
+                <p class="p1">微信未绑定</p>
+                <a hhref="javascript:void(0);" class="btn" id="wxbd">立即绑定</a>
+            </div>
+            <div class="err-box wym">
+                <i></i>
+                <p class="p1">今天提现次数已满，明天再来提现吧~</p>
+                <a href="" class="btn">我知道了</a>
+            </div>
+            <div class="err-box wqd">
+                <i></i>
+                <p class="p1">连续登录7天即可获得10元提现资格</p>
+                <a href="" class="btn">我知道了</a>
+            </div>
+            <div class="err-box wsfz">
+                <i></i>
+                <p class="p1">提现需要验证身份信息</p>
+                <a href="/authentication.html" class="btn">立即验证</a>
+            </div>
+            <div class="err-box wlq">
+                <i></i>
+                <p class="p1">零钱不足</p>
+                <a href="" class="btn">点击去赚钱</a>
+            </div>
+            <div class="suc-box">
+                <div class="pic">
+                    <img src="" id="avatarUrl">
+                </div>
+                <p class="nickname" id="nickname">硬朗的姥爷</p>
+                <p class="p1">确认提现<i class="amountLimit"></i>元至您的微信账号<br> 预计3-7个工作日到账</p>
+                <a href="/withdrawalsResult.html?cashOrderId=" class="btn" id="cashOrderId">确认提现</a>
+            </div>
+            <!-- <div class="msg-box">
+                <p class="msg" id="msg"></p>
+                <a href="javascript:void(0);" class="close _close">确定</a>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        window.pageName = 'withdrawals';
+    </script>
+
+    <script src="js/vconsole.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/withdrawals.js"></script>
+</body>
+</html>

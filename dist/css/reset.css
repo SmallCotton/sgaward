@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html,
+ul,
+li,
+p,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  font: 100px/1 Microsoft Yahei, Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: auto;
+}
+img {
+  display: block;
+}
+img,
+input {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #a2a2a2;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  -webkit-touch-callout: none;
+}
+div,
+ul,
+li,
+form,
+input,
+span,
+b,
+a,
+i,
+em {
+  -webkit-tap-highlight-color: transparent;
+  font-style: normal;
+}
+button {
+  border: none;
+  outline: none;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a:active {
+  /*color: #F25730;*/
+}
+/*globla and reset 后期再算再改*/
+html {
+  font-size: 30px;
+}
+@media screen and (min-width: 270px) {
+  html {
+    font-size: calc(25px + (45 - 25) * (100vw - 270px) / (486 - 270));
+    font-size: calc(156.25% + (45 - 25) * (100vw - 270px) / (486 - 270));
+  }
+}
+@media screen and (min-width: 487px) {
+  html {
+    font-size: 45px;
+  }
+}
+/*common*/
+.wrapper {
+  max-width: 510px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.cl:after {
+  content: '\20';
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}

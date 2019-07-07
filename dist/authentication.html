@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="">
+    <!-- doing err alertshow -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <script src="js/font.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper authentication">
+        <a class="_back"></a>
+        <p class="tit">个人身份认证</p>
+        <p class="p1 pt1">请您如实准确填写本人信息，否则驳回认证</p>
+        <div class="input-group">
+            <span class="label"><i>*</i>姓名</span>
+            <input placeholder="请输入身份证上的姓名" id="name">
+        </div>
+        <div class="input-group">
+            <span class="label"><i>*</i>身份证号</span>
+            <input placeholder="请输入身份证上的号码" id="id">
+        </div>
+        <p class="label"><i>*</i>上传本人照片</p>
+        <p class="p1 pt2">近期正面免冠照，照片清晰完整，需露出眉毛耳朵</p>
+        <div class="pic-box" id="picBox">
+            <!-- <img src="img/bg.png"> -->
+            <a href="javascript:void(0);" class="ico-upload takePhoto" ></a>
+        </div>
+        <a href="javascript:void(0);" class="btn disabled" id="submit">提交</a>
+        <!-- disabled -->
+        <p class="btmp">仅用于搜狗浏览器用户提现使用</p>
+        <div class="load-box" id="loadBox">
+            <!-- doing err -->
+            <div class="res-box doing-box">
+                <div class="man"></div>
+                <p class="ptip">您的信息正在审核中，<br> 请在此⻚页⾯面耐⼼心等待...</p>
+            </div>
+            <div class="res-box err-box">
+                <div class="man"></div>
+                <p class="ptip">认证失败</p>
+                <a href="javascript:void(0);" class="btn" id="refresh">重新上传</a>
+            </div>
+        </div>
+        <div class="alert-box">
+            <div class="msg-box msg-box1">
+                <p class="msg" id="msg"></p>
+                <div class="btn-box">
+                    <a href="javascript:void(0);" class="close">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.pageName = 'authentication';
+    </script>
+
+    <script src="js/vconsole.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/authentication.js"></script>
+</body>
+</html>

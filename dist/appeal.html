@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="">
+    <!-- alertshow -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <script src="js/font.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper appeal">
+        <div class="topbar">
+            <a href="javascript:void(0);" class="_back"></a>
+            账号申诉
+            <a href="/myappeal.html"  class="link">我的申诉</a>
+        </div>
+        <div class="wrap">
+            <p class="titp">请提供以下信息进行账号的申诉</p>
+            <div class="input-cell">
+                <span class="label">手机号</span>
+                <div class="input-box">
+                    <input value="" id="phone">
+                </div>
+            </div>
+            <div class="input-cell">
+                <span class="label">姓名</span>
+                <div class="input-box">
+                    <input value="" id="name">
+                </div>
+            </div>
+            <div class="input-cell">
+                <span class="label">身份证号</span>
+                <div class="input-box">
+                    <input value="" id="id">
+                </div>
+            </div>
+            <p class="titp titp1">申诉描述</p>
+            <div class="textarea-box">
+                <textarea id="desc"></textarea>
+            </div>
+            <a href="javascript:void(0);" class="submit disabled" id="submit">提交</a>
+        </div>
+        <div class="alert-box">
+            <div class="msg-box">
+                <p class="msg" id="msg"></p>
+                <a href="javascript:void(0);" class="close">确定</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.pageName = 'appeal';
+    </script>
+
+    <script src="js/vconsole.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/appeal.js"></script>
+</body>
+</html>

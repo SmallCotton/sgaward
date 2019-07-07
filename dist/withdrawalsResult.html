@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <script src="js/font.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper withdrawalsResult" id="withdrawalsResult"> 
+            <!-- suc err -->
+        <div class="topbar">
+            <a href="javascript:void(0);" class="_back"></a>
+            提现申请提交
+        </div>
+        <div class="box1 suc-box">
+            <div class="suc-ico"></div>
+            <p class="p1">提交成功</p>
+            <ul class="txt-list">
+                <li>
+                    <span class="label">提现方式</span>
+                    <span class="txt" id="accountType">支付宝</span>
+                </li>
+                <li>
+                    <span class="label">提现金额</span>
+                    <span class="txt"><i id="cashMoney"></i>元</span>
+                </li>
+                <li>
+                    <span class="label">预计到账</span>
+                    <span class="txt">提交成功后3~7个工作日</span>
+                </li>
+            </ul>
+        </div>
+        <div class="box1 err-box">
+            <div class="err-ico"></div>
+            <p class="p1">提交失败</p>
+            <p class="p1">请稍后再试</p>
+        </div>
+        <div class="hr"></div>
+        <p class="titp">每日任务</p>
+        <ul class="task-list" id="dailyTask">
+            <!-- <li>
+                <div class="pic search"></div>
+                <div class="txt-box">
+                    <p class="p1">搜索领现金</p>
+                    <p class="p2">去搜索框完成5次搜索</p>
+                </div>
+                <a class="btn btnw">去搜索</a>
+            </li>
+            <li>
+                <div class="pic zixun"></div>
+                <div class="txt-box">
+                    <p class="p1">搜索领现金</p>
+                    <p class="p2">去搜索框完成5次搜索</p>
+                </div>
+                <a class="btn disabled">去阅读</a>
+            </li> -->
+        </ul>
+    </div>
+    <script>
+        window.pageName = 'withdrawalsResult';
+    </script>
+    
+        
+    <script src="js/vconsole.min.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="js/withdrawalsResult.js"></script>
+</body>
+</html>
